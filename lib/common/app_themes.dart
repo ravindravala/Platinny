@@ -6,7 +6,7 @@ import 'app_colors.dart';
 class AppThemes {
   static ThemeData applicationDefaultTheme(BuildContext context) {
     ThemeData originalTheme = ThemeData.light();
-    const String fontFamily = 'NotoSans';
+
     return ThemeData(
       useMaterial3: true,
       primaryColor: AppColors.primary,
@@ -16,7 +16,7 @@ class AppThemes {
       primaryColorDark: AppColors.hintColorGrey,
       scaffoldBackgroundColor: AppColors.white,
       disabledColor: AppColors.greyHintColor,
-      fontFamily: GoogleFonts.notoSans().fontFamily,
+      fontFamily: GoogleFonts.tajawal().fontFamily,
       shadowColor: AppColors.shadowColorLight,
       // hintColor: AppColors.darkGrey,
       hintColor: AppColors.hintColor,
@@ -26,13 +26,12 @@ class AppThemes {
         selectionColor: AppColors.textSelectionColor,
         selectionHandleColor: AppColors.textSelectionColor,
       ),
-      appBarTheme: const AppBarTheme(
+      appBarTheme: AppBarTheme(
         color: AppColors.white,
         surfaceTintColor: AppColors.secondary,
-        titleTextStyle: TextStyle(
+        titleTextStyle: GoogleFonts.tajawal(
           color: AppColors.white,
           fontSize: 24,
-          fontFamily: fontFamily,
           fontWeight: FontWeight.w500,
         ),
       ),
@@ -48,94 +47,80 @@ class AppThemes {
       snackBarTheme: const SnackBarThemeData(
         actionTextColor: AppColors.white,
       ),
-      textTheme: GoogleFonts.notoSansTextTheme(originalTheme.textTheme.copyWith(
-        titleLarge: const TextStyle(
+      textTheme: GoogleFonts.tajawalTextTheme(originalTheme.textTheme.copyWith(
+        titleLarge: GoogleFonts.tajawal(
           fontWeight: FontWeight.w700,
           fontSize: 16,
-          fontFamily: fontFamily,
           color: AppColors.black,
         ),
-        titleMedium: const TextStyle(
+        titleMedium: GoogleFonts.tajawal(
           fontWeight: FontWeight.w500,
           fontSize: 16,
-          fontFamily: fontFamily,
           color: AppColors.black,
         ),
-        titleSmall: const TextStyle(
+        titleSmall: GoogleFonts.tajawal(
           fontSize: 14,
           fontWeight: FontWeight.w300,
-          fontFamily: fontFamily,
           color: AppColors.black,
         ),
-        bodyLarge: const TextStyle(
+        bodyLarge: GoogleFonts.tajawal(
           fontWeight: FontWeight.bold,
           fontSize: 16,
-          fontFamily: fontFamily,
           color: AppColors.black,
         ),
-        bodyMedium: const TextStyle(
-            fontWeight: FontWeight.w500,
-            fontSize: 14,
-            fontFamily: fontFamily,
-            color: AppColors.black),
-        bodySmall: const TextStyle(
+        bodyMedium: GoogleFonts.tajawal(
+          fontWeight: FontWeight.w500,
+          fontSize: 14,
+          color: AppColors.black,
+        ),
+        bodySmall: GoogleFonts.tajawal(
           fontWeight: FontWeight.w400,
           fontSize: 12,
-          fontFamily: fontFamily,
           color: AppColors.black,
         ),
-        displayLarge: const TextStyle(
+        displayLarge: GoogleFonts.tajawal(
           fontSize: 24,
           fontWeight: FontWeight.w800,
-          fontFamily: fontFamily,
           color: AppColors.black,
         ),
-        displayMedium: const TextStyle(
+        displayMedium: GoogleFonts.tajawal(
           fontSize: 18,
           fontWeight: FontWeight.w700,
-          fontFamily: fontFamily,
           color: AppColors.black,
         ),
-        displaySmall: const TextStyle(
+        displaySmall: GoogleFonts.tajawal(
           fontSize: 16,
           fontWeight: FontWeight.w700,
-          fontFamily: fontFamily,
           color: AppColors.black,
         ),
-        headlineLarge: const TextStyle(
+        headlineLarge: GoogleFonts.tajawal(
           fontWeight: FontWeight.w700,
           fontSize: 14,
-          fontFamily: fontFamily,
           color: AppColors.black,
         ),
-        headlineMedium: const TextStyle(
+        headlineMedium: GoogleFonts.tajawal(
           fontWeight: FontWeight.w700,
           fontSize: 12,
-          fontFamily: fontFamily,
           color: AppColors.black,
         ),
-        headlineSmall: const TextStyle(
+        headlineSmall: GoogleFonts.tajawal(
           fontWeight: FontWeight.w700,
           fontSize: 26,
-          fontFamily: '$fontFamily-Bold',
           color: AppColors.black,
         ),
-        labelLarge: const TextStyle(
+        labelLarge: GoogleFonts.tajawal(
           fontWeight: FontWeight.w400,
           fontSize: 14,
-          fontFamily: fontFamily,
           color: AppColors.black,
         ),
-        labelMedium: const TextStyle(
+        labelMedium: GoogleFonts.tajawal(
           fontWeight: FontWeight.w400,
           fontSize: 12,
-          fontFamily: fontFamily,
           color: AppColors.black,
         ),
-        labelSmall: const TextStyle(
+        labelSmall: GoogleFonts.tajawal(
           fontWeight: FontWeight.w400,
           fontSize: 10,
-          fontFamily: fontFamily,
           color: AppColors.black,
         ),
       )),
@@ -144,17 +129,16 @@ class AppThemes {
           borderRadius: BorderRadius.circular(8),
         ),
       ),
-      bottomNavigationBarTheme: const BottomNavigationBarThemeData(
+      bottomNavigationBarTheme: BottomNavigationBarThemeData(
         backgroundColor: AppColors.white,
         selectedItemColor: AppColors.secondary,
         elevation: 0,
         type: BottomNavigationBarType.shifting,
-        selectedLabelStyle: TextStyle(
+        selectedLabelStyle: GoogleFonts.tajawal(
           fontWeight: FontWeight.w500,
           fontSize: 12,
-          fontFamily: fontFamily,
         ),
-        unselectedLabelStyle: TextStyle(
+        unselectedLabelStyle: GoogleFonts.tajawal(
           fontWeight: FontWeight.w500,
           fontSize: 12,
         ),
@@ -183,7 +167,7 @@ class AppThemes {
   // DARK THEME
   static ThemeData darkTheme(BuildContext context) {
     ThemeData originalTheme = ThemeData.dark();
-    const String fontFamily = 'NotoSans';
+
     return ThemeData(
       useMaterial3: true,
       primaryColor: AppColors.primary,
@@ -192,7 +176,7 @@ class AppThemes {
       primaryColorDark: AppColors.white,
       scaffoldBackgroundColor: AppColors.black,
       disabledColor: AppColors.disabledColorDark,
-      fontFamily: GoogleFonts.notoSans().fontFamily,
+      fontFamily: GoogleFonts.tajawal().fontFamily,
       shadowColor: AppColors.shadowColorDark,
       // hintColor: AppColors.darkGrey,
       hintColor: AppColors.hintColor,
@@ -202,13 +186,12 @@ class AppThemes {
         selectionColor: AppColors.textSelectionColor,
         selectionHandleColor: AppColors.textSelectionColor,
       ),
-      appBarTheme: const AppBarTheme(
+      appBarTheme: AppBarTheme(
         color: AppColors.black,
         surfaceTintColor: AppColors.secondary,
-        titleTextStyle: TextStyle(
+        titleTextStyle: GoogleFonts.tajawal(
           color: AppColors.white,
           fontSize: 24,
-          fontFamily: fontFamily,
           fontWeight: FontWeight.w500,
         ),
       ),
@@ -224,95 +207,80 @@ class AppThemes {
       snackBarTheme: const SnackBarThemeData(
         actionTextColor: AppColors.white,
       ),
-      textTheme: GoogleFonts.notoSansTextTheme(originalTheme.textTheme.copyWith(
-        titleLarge: const TextStyle(
+      textTheme: GoogleFonts.tajawalTextTheme(originalTheme.textTheme.copyWith(
+        titleLarge: GoogleFonts.tajawal(
           fontWeight: FontWeight.w700,
           fontSize: 16,
-          fontFamily: fontFamily,
           color: AppColors.white,
         ),
-        titleMedium: const TextStyle(
+        titleMedium: GoogleFonts.tajawal(
           fontWeight: FontWeight.w500,
           fontSize: 16,
-          fontFamily: fontFamily,
           color: AppColors.white,
         ),
-        titleSmall: const TextStyle(
+        titleSmall: GoogleFonts.tajawal(
           fontSize: 14,
           fontWeight: FontWeight.w300,
-          fontFamily: fontFamily,
           color: AppColors.white,
         ),
-        bodyLarge: const TextStyle(
+        bodyLarge: GoogleFonts.tajawal(
           fontWeight: FontWeight.bold,
           fontSize: 16,
-          fontFamily: fontFamily,
           color: AppColors.white,
         ),
-        bodyMedium: const TextStyle(
+        bodyMedium: GoogleFonts.tajawal(
           fontWeight: FontWeight.w500,
           fontSize: 14,
-          fontFamily: fontFamily,
           color: AppColors.white,
         ),
-        bodySmall: const TextStyle(
+        bodySmall: GoogleFonts.tajawal(
           fontWeight: FontWeight.w400,
           fontSize: 12,
-          fontFamily: fontFamily,
           color: AppColors.white,
         ),
-        displayLarge: const TextStyle(
+        displayLarge: GoogleFonts.tajawal(
           fontSize: 24,
           fontWeight: FontWeight.w800,
-          fontFamily: fontFamily,
           color: AppColors.white,
         ),
-        displayMedium: const TextStyle(
+        displayMedium: GoogleFonts.tajawal(
           fontSize: 18,
           fontWeight: FontWeight.w700,
-          fontFamily: fontFamily,
           color: AppColors.white,
         ),
-        displaySmall: const TextStyle(
+        displaySmall: GoogleFonts.tajawal(
           fontSize: 16,
           fontWeight: FontWeight.w700,
-          fontFamily: fontFamily,
           color: AppColors.white,
         ),
-        headlineLarge: const TextStyle(
+        headlineLarge: GoogleFonts.tajawal(
           fontWeight: FontWeight.w700,
           fontSize: 14,
-          fontFamily: fontFamily,
           color: AppColors.white,
         ),
-        headlineMedium: const TextStyle(
+        headlineMedium: GoogleFonts.tajawal(
           fontWeight: FontWeight.w700,
           fontSize: 12,
-          fontFamily: fontFamily,
           color: AppColors.white,
         ),
-        headlineSmall: const TextStyle(
+        headlineSmall: GoogleFonts.tajawal(
           fontWeight: FontWeight.w700,
           fontSize: 26,
-          fontFamily: '$fontFamily-Bold',
           color: AppColors.white,
         ),
-        labelLarge: const TextStyle(
+        labelLarge: GoogleFonts.tajawal(
           fontWeight: FontWeight.w400,
           fontSize: 14,
-          fontFamily: fontFamily,
           color: AppColors.white,
         ),
-        labelMedium: const TextStyle(
+        labelMedium: GoogleFonts.tajawal(
           fontWeight: FontWeight.w400,
           fontSize: 12,
-          fontFamily: fontFamily,
           color: AppColors.white,
         ),
-        labelSmall: const TextStyle(
+        labelSmall: GoogleFonts.tajawal(
           fontWeight: FontWeight.w400,
           fontSize: 10,
-          fontFamily: fontFamily,
           color: AppColors.white,
         ),
       )),
@@ -321,15 +289,14 @@ class AppThemes {
           borderRadius: BorderRadius.circular(8),
         ),
       ),
-      bottomNavigationBarTheme: const BottomNavigationBarThemeData(
+      bottomNavigationBarTheme: BottomNavigationBarThemeData(
         backgroundColor: AppColors.black,
         selectedItemColor: AppColors.white,
-        selectedLabelStyle: TextStyle(
+        selectedLabelStyle: GoogleFonts.tajawal(
           fontWeight: FontWeight.w500,
           fontSize: 12,
-          fontFamily: fontFamily,
         ),
-        unselectedLabelStyle: TextStyle(
+        unselectedLabelStyle: GoogleFonts.tajawal(
           fontWeight: FontWeight.w500,
           fontSize: 12,
         ),
