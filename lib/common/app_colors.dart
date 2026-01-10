@@ -8,17 +8,17 @@ class AppColors {
 
   static const Color secondaryLight = Color(0xFFF0F2FF);
 
-//Light
+  //Light
   static const Color errorLight = Color.fromARGB(255, 196, 32, 32);
   static const Color onErrorLight = Color.fromARGB(255, 245, 39, 39);
   static const Color shadowColorLight = Color.fromARGB(255, 188, 188, 188);
 
-// Dark
+  // Dark
   static const Color secondaryDark = Color.fromRGBO(84, 197, 248, 1);
   static const Color disabledColorDark = Color.fromARGB(255, 166, 166, 166);
   static const Color shadowColorDark = Color.fromARGB(255, 175, 175, 175);
 
-// Common colors
+  // Common colors
   static const int primaryValue = 0xFFA432A7;
   static const Color white = Color(0xFFFFFFFF);
   static const Color black = Color(0xFF000000);
@@ -35,15 +35,16 @@ class AppColors {
   static const Color greyContainerColor = Color(0xFFEEEEEE);
 
   static const Color greyHintColor = Color(0xFF696969);
-  static Color textSelectionColor =
-      greyHintColor.withAlpha((0.5 * 255).toInt());
+  static Color textSelectionColor = greyHintColor.withAlpha(
+    (0.5 * 255).toInt(),
+  );
 
   static const Color whiteText = Color(0xFFFFFFFF);
   static const Color blackText = Color(0xFF000000);
   static const Color commonColor = Color(0xFFDBDBDB);
   static const MaterialColor blue = Colors.blue;
   static const MaterialColor orange = Colors.orange;
-  static const Color buttonColor = Color(0xFF001CAD);
+  static const Color buttonColor = secondary;
   static const Color buttonTextColor = Color(0xFFFFFFFF);
   static const Color goldenColor = Color(0xffFFD700);
   static const Color hintColor = Color(0xFF565D6D);
