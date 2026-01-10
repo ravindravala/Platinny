@@ -4,7 +4,7 @@ import '../db/app_database.dart';
 import '../features/language/domain/models/language_listing_model.dart';
 
 class AppConstants {
-  static const String title = 'Platinum for the driver';
+  static const String title = 'بلاتيني للسائق';
   static const String baseUrl = 'https://platinny.com/';
   static String firbaseApiKey = (Platform.isAndroid)
       ? "AIzaSyDO5NZyF_dhYvosDNzPn_KQH6Bzlb-q1Qg"
